@@ -1,0 +1,296 @@
+/* navbar */
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
+}
+.logo {
+  width: 90px;
+  margin: 8px 15px;
+  height: 50%;
+}
+.navbar {
+  display: flex !important;
+  justify-content: space-between !important;
+  position: fixed !important;
+  top: 0 !important;
+  width: 100% !important;
+  z-index: 999 !important;
+  align-items: center !important;
+  padding: 15px 0px !important;
+  background: url(/assets/MIU1.png) center no-repeat !important;
+}
+.menu {
+  display: flex;
+  color: black;
+  list-style-type: none;
+  font-size: 12px;
+  align-items: center;
+  margin-left: 204px;
+}
+.main-responsive-menu {
+  display: unset !important;
+}
+.button {
+  background-color: transparent;
+  color: white;
+  border: white solid 2px;
+  border-radius: 6px;
+  font-size: 14px;
+  text-transform: capitalize;
+  padding: 3px 19px;
+  text-align: right;
+  margin-left: 241px;
+  margin-right: 25px;
+}
+a {
+  padding: 3px;
+  font-size: 14px;
+  font-weight: 20px;
+  cursor: pointer;
+  color: #fff !important;
+  text-decoration: none !important;
+  margin: 0px 50px;
+}
+
+/* Denah1 */
+.sketch {
+  display: block;
+  margin-top: 350px;
+}
+.slide-card {
+  display: block;
+}
+.img {
+  width: 60%;
+  margin-top: -155px;
+}
+.denah1img {
+  width: 100% !important;
+  object-fit: cover !important;
+  margin-left: 30px;
+  margin-top: -30px;
+}
+.blog-post-sketch {
+  font-size: 38px;
+  color: black;
+  justify-content: right;
+  margin-top: -200px;
+  margin-bottom: 30px;
+  margin-left: 30px;
+}
+
+/* Footer */
+.footer {
+  background: #303036;
+  color: white;
+  height: 160px;
+  position: relative;
+  width: 100%;
+  background: url(/assets/stolenalton.jpg);
+}
+.border {
+  border: 1px solid white;
+}
+.footer .footer-bottom {
+  background: #343a40;
+  color: #686868;
+  height: 35px;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 0px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  height: 28px;
+}
+.footer .grid {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.gridone {
+  width: 20%;
+}
+.gridtwo {
+  width: 40%;
+}
+.gridthree {
+  width: 40%;
+}
+.contactperson h1 {
+  object-position: top;
+  font-size: 20px;
+  margin-top: 5px;
+}
+.address h1 {
+  object-position: top;
+  font-size: 20px;
+  margin-top: px;
+}
+.contactperson p {
+  object-position: top;
+  font-size: 16px;
+  display: block;
+  line-height: 10px;
+}
+.address p {
+  object-position: top;
+  font-size: 16px;
+  display: block;
+  line-height: 10px;
+}
+.a-two {
+  margin: 0px 0px;
+}
+
+/* responsive menu icon */
+.overlay {
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */
+  height: 100%;
+  width: 0;
+  position: fixed; /* Stay in place */
+  z-index: 999; /* Sit on top */
+  left: 0;
+  top: 0;
+  background-color: rgb(0, 0, 0); /* Black fallback color */
+  background-color: rgba(0, 0, 0, 0.9); /* Black w/opacity */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+  position: relative;
+  top: 25%; /* 25% from the top */
+  width: 100%; /* 100% width */
+  text-align: center; /* Centered text/links */
+  margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181 !important;
+  display: block; /* Display block instead of inline */
+  transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover,
+.overlay a:focus {
+  color: #f1f1f1 !important;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+}
+
+/* responsive */
+@media only screen and (max-width: 600px) {
+  .logo {
+    width: 67px !important;
+    margin: 15px 12px !important;
+  }
+  .navbar {
+    display: flex !important;
+    padding: unset !important;
+    max-width: 374px !important;
+    justify-content: space-between;
+  }
+  .overlay a {
+    font-size: 20px !important;
+  }
+  .overlay .closebtn {
+    position: absolute;
+    font-size: 40px !important;
+    top: 15px !important;
+    right: 35px !important;
+  }
+  .main-responsive-menu {
+    margin-right: 0px;
+  }
+  .menu {
+    display: none;
+  }
+  .button {
+    display: none;
+  }
+  .menu {
+    display: none !important;
+  }
+  .bar1,
+  .bar2,
+  .bar3 {
+    width: 35px !important;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  .responsive-menu {
+    margin-right: 20px !important;
+  }
+  .sketch {
+    margin-top: 300px !important;
+  }
+  .blog-post-sketch {
+    font-size: 35px;
+    white-space: nowrap;
+  }
+  .denah1img {
+    width: 167% !important;
+    margin-left: 0px !important;
+  }
+
+  /* footer */
+  .footer {
+    height: 335px;
+  }
+  .footer .grid {
+    display: block;
+    height: 350px;
+  }
+  .logo {
+    width: 56px;
+    align-items: center;
+  }
+  .gridone {
+    display: flex;
+    align-items: center !important;
+    justify-content: center !important;
+    width: unset;
+  }
+  .gridtwo {
+    display: flex;
+    align-items: center !important;
+    justify-content: center !important;
+    width: unset;
+    margin-left: -47px;
+    height: 107px;
+  }
+  .address {
+    font-size: 20px;
+  }
+  .gridthree {
+    margin-top: 19px;
+    display: flex;
+    width: unset;
+    height: 134px;
+    margin-left: 7px;
+    margin-top: -5px;
+  }
+  .contactperson {
+    font-size: 20px;
+  }
+  .footer .footer-bottom {
+    bottom: -34px;
+    height: 36px;
+  }
+}

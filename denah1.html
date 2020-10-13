@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <title>Floor Plan</title>
+    <link rel="stylesheet" href="style/denah1.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="assets/rsz_1miulogo-removebg-preview.png" />
+  </head>
+  <body>
+    <div class="navbar">
+      <img src="assets/MIUlogo-removebg-preview.png" class="logo" />
+      <div class="menu">
+        <a href="index.html#carouselExampleCaptions">Home</a>
+        <a href="index.html#section-three">Type</a>
+        <a href="index.html#facilities">Facilities</a>
+        <a href="index.html#carouselLt">Sketch</a>
+      </div>
+      <a href="#footer" class="button">Contact Us</a>
+      <a
+        href="javascript:void(0);"
+        class="main-responsive-menu"
+        onclick="openNav()"
+      >
+        <div class="responsive-menu">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+      </a>
+    </div>
+
+    <!-- The overlay -->
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <div class="overlay-content">
+        <a href="index.html#carouselExampleCaptions" class="collapse-items"
+          >Home</a
+        >
+        <a href="index.html#section-three" class="collapse-items">Type</a>
+        <a href="index.html#facilities" class="collapse-items">Facilities</a>
+        <a href="index.html#carouselLt" class="collapse-items">Sketch</a>
+        <a href="#footer" class="button1">Contact Us</a>
+      </div>
+    </div>
+    <span onclick="openNav()"></span>
+
+    <!-- Denah1 -->
+
+    <div class="sketch">
+      <div class="slide-card"></div>
+      <div class="img">
+        <div class="blog-post-sketch">Floor Plan 1</div>
+        <img src="lt/lt5.png" class="denah1img" />
+      </div>
+    </div>
+
+    <!-- footer -->
+
+    <div class="footer">
+      <div class="grid">
+        <div class="gridone">
+          <img src="assets/MIUlogo-removebg-preview.png" class="logo" />
+        </div>
+        <div class="gridtwo">
+          <div class="address">
+            <h1>Address</h1>
+            <p>
+              MARKERTING OFFICE : Jl. Prof. Sudarto SH
+              <br /><br />
+              No. 127 A Tembalang - Semarang
+            </p>
+            <p>Daily Open 08.00 - 19.00</p>
+          </div>
+        </div>
+        <div class="gridthree">
+          <div class="contactperson">
+            <h1>Contact Person</h1>
+            <p>
+              Telepon :
+              <a href="tel:+62896706255135" class="a-two">024-7640-1135</a>
+            </p>
+            <p>
+              Whatsapp :
+              <a href="https://wa.me/081327518608" class="a-two"
+                >0813 27518608</a
+              >
+            </p>
+            <p>
+              E-mail :
+              <a href="mailto: apartemen.menaraikaundip@gmail.com" class="a-two"
+                >@apartemen.menaraikaundip@gmail.com</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <vr />
+
+      <div class="footer-bottom">&copy; Menara Ika Undip</div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="javascript/index.js"></script>
+    <script>
+      function openNav() {
+        var x = document.getElementById("myNav");
+        x.style.width = "0%"
+          ? (x.style.width = "100%")
+          : (x.style.width = "0%");
+      }
+      function closeNav() {
+        document.getElementById("myNav").style.width = "0";
+      }
+    </script>
+  </body>
+</html>
