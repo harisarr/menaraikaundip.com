@@ -667,7 +667,7 @@ input[name="r"] {
     margin-top: 89px;
   }
   .video {
-    width: 92%;
+    width: 98%;
     margin-top: 57px;
   }
   .titleslide h5 {
@@ -720,7 +720,7 @@ input[name="r"] {
   }
   .carousel-control-next,
   .carousel-control-prev {
-    top: 77px !important;
+    display: none !important;
   }
   .icon-button {
     margin-top: -47px;
